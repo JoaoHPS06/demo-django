@@ -20,10 +20,6 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 2** 
 
 ## ⚙️ Como executar
 
-### Pré-requisitos
-
-- [Docker](https://docs.docker.com/get-docker/) instalado (inclui o `docker compose`)
-
 ### Passo a passo
 
 **1. Clone o repositório e acesse o branch correto:**
@@ -65,52 +61,27 @@ docker compose down
 
 ---
 
-## 🗄️ Modelo de Dados
-
-### `Mensagem` (`home/models.py`) — atualizado neste roteiro
-
-| Campo | Tipo Django | Descrição |
-|---|---|---|
-| `titulo` | `CharField(max_length=120)` | Título da mensagem |
-| `conteudo` | `TextField` | Corpo da mensagem |
-| `autor` | `CharField(max_length=80, default="Anônimo")` | ← **campo novo** |
-| `criada_em` | `DateTimeField(auto_now_add=True)` | Data/hora de criação (automática) |
-
-> O campo `autor` foi adicionado com `default="Anônimo"` para que registros já existentes no banco não quebrassem com a nova migration.
-
----
-
-## 🔗 Rotas
-
-| URL | View | Template | Descrição |
-|---|---|---|---|
-| `/` | `home.views.index` | `home/index.html` | Página principal com mensagens do banco |
-| `/sobre/` | `home.views.sobre` | `home/sobre.html` | Página estática "Sobre o projeto" |
-| `/admin/` | Django Admin | — | Painel administrativo |
-
----
-
 ## 📸 Sistema em execução
 
 ### Cadastro de mensagem no painel Admin
 
 > Após criar o superusuário e acessar `/admin/`, é possível cadastrar mensagens com título, conteúdo e autor.
 
-![Cadastro de mensagem no admin](imagens/turorial-django-mensagem-teste.png)
+![Cadastro de mensagem no admin](imagens/imagem4.png)
 
 ### Página principal com mensagens e campo autor
 
 > As mensagens cadastradas aparecem na página inicial, agora exibindo também o campo `autor` abaixo do conteúdo.
 
 <!-- Substitua pela sua captura de tela -->
-![Página principal com mensagens e autor](imagens/page-mensagens-com-autor.png)
+![Página principal com mensagens e autor](imagens/imagem5.png)
 
 ### Página /sobre/
 
 > Nova rota estática criada neste roteiro, acessível pelo link `/sobre` no menu de navegação.
 
 <!-- Substitua pela sua captura de tela -->
-![Página sobre](imagens/page-sobre.png)
+![Página sobre](imagens/imagem6.png)
 
 ---
 
