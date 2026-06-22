@@ -7,6 +7,8 @@ class Mensagem(models.Model):
     criada_em = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        verbose_name = 'Mensagem'
+        verbose_name_plural = 'Mensagens'
         ordering = ["-criada_em"]
 
     def __str__(self):
