@@ -14,46 +14,6 @@ A página exibe cards com as tecnologias utilizadas e uma seção dinâmica que 
 
 ---
 
-## 🛠️ Tecnologias
-
-| Tecnologia | Versão | Papel no projeto |
-|---|---|---|
-| Python | 3.12 | Linguagem base |
-| Django | 5.1.3 | Framework web back-end |
-| Tailwind CSS | CDN | Estilização via classes utilitárias |
-| SQLite | — | Banco de dados local |
-| Docker / Docker Compose | — | Containerização do ambiente |
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-demo-django/
-├── core/                   # Pacote de configuração do projeto Django
-│   ├── settings.py         # Configurações globais (INSTALLED_APPS, TEMPLATES, etc.)
-│   ├── urls.py             # Roteador principal de URLs
-│   ├── wsgi.py             # Ponto de entrada WSGI (produção)
-│   └── asgi.py             # Ponto de entrada ASGI (produção)
-├── home/                   # App responsável pela página principal
-│   ├── migrations/         # Migrations geradas pelo Django
-│   │   └── 0001_initial.py
-│   ├── models.py           # Modelo Mensagem (título, conteúdo, data)
-│   ├── views.py            # View index — busca mensagens e renderiza template
-│   ├── urls.py             # Rotas do app home
-│   └── admin.py            # Registro do modelo no painel admin
-├── templates/
-│   └── home/
-│       └── index.html      # Template HTML com Tailwind CSS
-├── Dockerfile              # Receita da imagem Docker
-├── docker-compose.yml      # Orquestração do serviço web
-├── requirements.txt        # Dependências Python
-├── .gitignore
-└── .dockerignore
-```
-
----
-
 ## ⚙️ Como executar
 
 ### Pré-requisitos
@@ -82,11 +42,6 @@ git checkout bcc481-django-parte1
 ```bash
 docker compose up --build
 ```
-
-Esse comando irá:
-- Construir a imagem Docker com Python 3.12 e Django 5.1.3
-- Aplicar as migrations e criar o banco SQLite
-- Iniciar o servidor de desenvolvimento na porta 8000
 
 **3. Acesse no navegador:**
 
@@ -132,31 +87,21 @@ docker compose down
 
 > Exibição inicial ao subir o projeto pela primeira vez.
 
-![Página principal sem mensagens](imagens/page-tutorial-django-parte1.png)
+![Página principal sem mensagens](imagens/imagem1.png)
 
 ### Página principal — com mensagens cadastradas
 
 > Após cadastrar mensagens pelo painel `/admin/`, elas aparecem listadas na seção "Mensagens do banco de dados".
 
 <!-- Substitua pela sua captura de tela -->
-![Página com mensagens](imagens/page-com-mensagens.png)
+![Página com mensagens](imagens/imagem2.png)
 
 ### Painel Admin — listagem de mensagens
 
 > Interface administrativa gerada automaticamente pelo Django, com busca por título e conteúdo.
 
 <!-- Substitua pela sua captura de tela -->
-![Painel admin](imagens/admin-mensagens.png)
-
----
-
-## 📌 Destaques da implementação
-
-- **Docker como ambiente de desenvolvimento:** Python e Django rodam inteiramente dentro do container — sem instalação local das dependências.
-- **Volume montado:** a pasta local é mapeada para `/app` no container, então alterações no código refletem imediatamente sem rebuild.
-- **Tailwind via CDN:** sem pipeline de build (npm/Node), o CSS é carregado diretamente da CDN do Tailwind para simplificar o ambiente.
-- **Django Admin configurado:** o modelo `Mensagem` é registrado com `list_display` e `search_fields` para facilitar o gerenciamento via painel.
-- **Template com Django Template Language:** uso de `{% if %}`, `{% for %}` e filtros como `|date:"d/m/Y H:i"` para renderizar dados dinâmicos.
+![Painel admin](imagens/imagem3.png)
 
 ---
 
