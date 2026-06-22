@@ -57,30 +57,6 @@ docker compose down
 
 ---
 
-## 🗄️ Modelo de Dados
-
-### `Mensagem` (`home/models.py`)
-
-| Campo | Tipo Django | Descrição |
-|---|---|---|
-| `titulo` | `CharField(max_length=120)` | Título da mensagem |
-| `conteudo` | `TextField` | Corpo da mensagem |
-| `criada_em` | `DateTimeField(auto_now_add=True)` | Data/hora de criação (automática) |
-
-- Ordenação padrão: mais recentes primeiro (`ordering = ["-criada_em"]`)
-- Representação no admin: pelo campo `titulo`
-
----
-
-## 🔗 Rotas
-
-| URL | View | Descrição |
-|---|---|---|
-| `/` | `home.views.index` | Página principal com lista de mensagens |
-| `/admin/` | Django Admin | Painel administrativo |
-
----
-
 ## 📸 Sistema em execução
 
 ### Página principal — sem mensagens cadastradas
