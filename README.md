@@ -14,49 +14,6 @@ A página exibe cards com as tecnologias utilizadas e uma seção dinâmica que 
 
 ---
 
-## ⚙️ Como executar
-
-### Pré-requisitos
-
-- [Docker](https://docs.docker.com/get-docker/) instalado (inclui o `docker compose`)
-
-Verifique com:
-
-```bash
-docker --version
-docker compose version
-```
-
-### Passo a passo
-
-**1. Clone o repositório e acesse o branch correto:**
-
-```bash
-git clone https://github.com/JoaoHPS06/demo-django.git
-cd demo-django
-git checkout bcc481-django-parte1
-```
-
-**2. Suba o container:**
-
-```bash
-docker compose up --build
-```
-
-**3. Acesse no navegador:**
-
-- **Página principal:** http://localhost:8000  
-- **Painel admin:** http://localhost:8000/admin/
-
-**4. Para parar o servidor:**
-
-```bash
-# Ctrl+C no terminal, depois:
-docker compose down
-```
-
----
-
 ## 📸 Sistema em execução
 
 ### Página principal — sem mensagens cadastradas
