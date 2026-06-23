@@ -26,21 +26,21 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 3** 
 > Após a migration, o painel exibe a coluna `Categoria` na listagem e um filtro lateral para filtrar mensagens por categoria.
 
 <!-- Substitua pela sua captura de tela -->
-![Admin mensagens com categoria](imagens/admin-mensagens-categoria.png)
+![Admin mensagens com categoria](imagens/imagem7.png)
 
 ### Admin — cadastro de Categorias
 
 > Nova seção no painel admin para criar e gerenciar categorias (ex.: "Aviso", "Dúvida", "Sugestão").
 
 <!-- Substitua pela sua captura de tela -->
-![Admin cadastro de categorias](imagens/admin-categorias.png)
+![Admin cadastro de categorias](imagens/imagem8.png)
 
 ### Página principal com selos de categoria
 
 > Cada mensagem exibe um "selo" colorido com o nome da categoria. Mensagens sem categoria não exibem o selo (proteção via `{% if m.categoria %}`).
 
 <!-- Substitua pela sua captura de tela -->
-![Página principal com selos](imagens/page-mensagens-com-categoria.png)
+![Página principal com selos](imagens/imagem9.png)
 
 ---
 
