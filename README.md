@@ -18,49 +18,6 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 2** 
 
 ---
 
-## ⚙️ Como executar
-
-### Passo a passo
-
-**1. Clone o repositório e acesse o branch correto:**
-
-```bash
-git clone https://github.com/JoaoHPS06/demo-django.git
-cd demo-django
-git checkout bcc481-django-parte2
-```
-
-**2. Suba o container:**
-
-```bash
-docker compose up --build
-```
-
-**3. Em um segundo terminal, crie o superusuário:**
-
-```bash
-docker compose exec web python manage.py createsuperuser
-```
-
-Informe nome de usuário, e-mail (opcional) e senha.
-
-**4. Acesse no navegador:**
-
-| URL | Descrição |
-|---|---|
-| http://localhost:8000 | Página principal com lista de mensagens |
-| http://localhost:8000/sobre/ | Nova página estática "Sobre" |
-| http://localhost:8000/admin/ | Painel administrativo Django |
-
-**5. Para parar o servidor:**
-
-```bash
-# Ctrl+C no terminal, depois:
-docker compose down
-```
-
----
-
 ## 📸 Sistema em execução
 
 ### Cadastro de mensagem no painel Admin
