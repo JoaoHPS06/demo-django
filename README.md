@@ -25,21 +25,21 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 4** 
 > O widget `filter_horizontal` substitui o `<select multiple>` padrão por dois painéis lado a lado — "Disponíveis" e "Escolhidas" — muito mais confortáveis de usar.
 
 <!-- Substitua pela sua captura de tela -->
-![Admin filter_horizontal tags](imagens/admin-filter-horizontal-tags.png)
+![Admin filter_horizontal tags](imagens/imagem10.png)
 
 ### Admin — listagem de mensagens com filtro por tags
 
 > O painel exibe o filtro lateral com as tags cadastradas, além do filtro por categoria já existente da Parte 3.
 
 <!-- Substitua pela sua captura de tela -->
-![Admin listagem com filtro de tags](imagens/admin-listagem-tags.png)
+![Admin listagem com filtro de tags](imagens/imagem11.png)
 
 ### Página principal com hashtags
 
-> Cada mensagem exibe as tags associadas em formato de hashtag (`#django`, `#tutorial`). Mensagens sem tags não exibem o bloco (proteção via `{% if m.tags.all %}`).
+> Cada mensagem exibe as tags associadas em formato de hashtag (`#aviso`, `#específico`, `#geral`). Mensagens sem tags não exibem o bloco (proteção via `{% if m.tags.all %}`).
 
 <!-- Substitua pela sua captura de tela -->
-![Página principal com hashtags](imagens/page-mensagens-com-tags.png)
+![Página principal com hashtags](imagens/imagem12.png)
 
 ---
 
