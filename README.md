@@ -27,28 +27,21 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 5** 
 > Botão verde adicionado ao `index.html` para acessar o formulário público.
 
 <!-- Substitua pela sua captura de tela -->
-![Página principal com botão nova mensagem](imagens/page-index-botao-nova.png)
+![Página principal com botão nova mensagem](imagens/imagem13.png)
 
 ### Formulário de cadastro em `/nova/`
 
 > Formulário com campos de título, conteúdo, autor, categoria e tags (texto livre).
 
 <!-- Substitua pela sua captura de tela -->
-![Formulário nova mensagem](imagens/page-nova-mensagem.png)
+![Formulário nova mensagem](imagens/imagem14.png)
 
 ### Validação de campos obrigatórios
 
 > Ao tentar publicar com o título em branco, o formulário recarrega com a mensagem de erro em vermelho, sem salvar nada no banco.
 
 <!-- Substitua pela sua captura de tela -->
-![Erro de validação no formulário](imagens/page-nova-mensagem-erro.png)
-
-### Página principal após publicação com flash message
-
-> Após o envio bem-sucedido, o visitante é redirecionado para a home (padrão PRG) e vê o aviso verde e a nova mensagem no topo da lista com suas tags.
-
-<!-- Substitua pela sua captura de tela -->
-![Home com flash message e nova mensagem](imagens/page-index-flash-message.png)
+![Erro de validação no formulário](imagens/imagem15.png)
 
 ---
 
