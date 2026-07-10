@@ -27,28 +27,28 @@ Continuação do projeto `demo-django`, construída como parte do **Roteiro 6** 
 > Cada mensagem agora exibe dois links de ação no rodapé do card.
 
 <!-- Substitua pela sua captura de tela -->
-![Página principal com botões editar e remover](imagens/page-index-botoes-crud.png)
+![Página principal com botões editar e remover](imagens/imagem16.png)
 
 ### Formulário de edição pré-preenchido
 
 > O formulário em `/mensagens/<id>/editar/` abre já preenchido com os dados atuais, inclusive as tags separadas por vírgula no campo de texto.
 
 <!-- Substitua pela sua captura de tela -->
-![Formulário de edição](imagens/page-editar-mensagem.png)
+![Formulário de edição](imagens/imagem17.png)
 
 ### Página de confirmação de remoção
 
 > Antes de apagar, o visitante vê o título da mensagem e os botões "Sim, remover" (vermelho, POST) e "Cancelar" (link neutro).
 
 <!-- Substitua pela sua captura de tela -->
-![Página de confirmação de remoção](imagens/page-remover-mensagem.png)
+![Página de confirmação de remoção](imagens/imagem18.png)
 
 ### Página 404 ao acessar id inexistente
 
 > Ao tentar editar ou remover um id que não existe (ex.: `/mensagens/9999/editar/`), o Django exibe a página 404 em vez de um erro — efeito do `get_object_or_404`.
 
 <!-- Substitua pela sua captura de tela -->
-![Página 404](imagens/page-404.png)
+![Página 404](imagens/imagem19.png)
 
 ---
 
